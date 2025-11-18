@@ -1,6 +1,6 @@
 const ENV = import.meta.env
 
-const API_URL = `http://${ENV.VITE_API_HOST}:${ENV.VITE_API_PORT}${ENV.VITE_API_BASE_URL}/users`
+const API_URL = `${ENV.VITE_API_PROTOCOL}://${ENV.VITE_API_HOST}:${ENV.VITE_API_PORT}${ENV.VITE_API_BASE_URL}/users`
 
 export const userService = {
   getAllUsers: async () => {
